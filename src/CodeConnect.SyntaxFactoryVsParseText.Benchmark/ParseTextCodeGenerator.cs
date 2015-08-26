@@ -87,7 +87,9 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
                 // We're making a few more calls in the method's body
                 _sb.Append($@"
             var myNumber = Int32.Parse(""{methodName}"".Substring(6));
-            Console.WriteLine(""{methodName} says hi to "" + (myNumber + 1)); ");
+            Console.WriteLine(""{methodName} says hi to "" + (myNumber + 1));
+            System.Diagnostics.Debug.WriteLine(""Method {{0}} executed."", new[] {{ myNumber }});
+            var test = myNumber * 2; ");
             }
         }
     }
