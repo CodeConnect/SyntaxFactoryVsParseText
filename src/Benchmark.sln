@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeConnect.SyntaxFactoryVsParseText.Benchmark", "CodeConnect.SyntaxFactoryVsParseText.Benchmark\CodeConnect.SyntaxFactoryVsParseText.Benchmark.csproj", "{07380FF0-F375-4482-8AD4-4C4FC01BAA67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeConnect.SyntaxFactoryVsParseText.Tests", "CodeConnect.SyntaxFactoryVsParseText.Tests\CodeConnect.SyntaxFactoryVsParseText.Tests.csproj", "{9FA7EC4C-432B-4BB0-A4D7-D927C2971A43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07380FF0-F375-4482-8AD4-4C4FC01BAA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07380FF0-F375-4482-8AD4-4C4FC01BAA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07380FF0-F375-4482-8AD4-4C4FC01BAA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07380FF0-F375-4482-8AD4-4C4FC01BAA67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FA7EC4C-432B-4BB0-A4D7-D927C2971A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FA7EC4C-432B-4BB0-A4D7-D927C2971A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FA7EC4C-432B-4BB0-A4D7-D927C2971A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FA7EC4C-432B-4BB0-A4D7-D927C2971A43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
