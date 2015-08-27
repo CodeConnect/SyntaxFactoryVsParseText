@@ -16,13 +16,8 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
 
         static void Main(string[] args)
         {
-            Console.WriteLine(args);
-            Console.WriteLine(args.Count());
             if (args != null && args.Count() == 3)
             {
-                Console.WriteLine(args[0]);
-                Console.WriteLine(args[1]);
-                Console.WriteLine(args[2]);
                 var desiredCalls = Int32.Parse(args[0]);
                 var desiredComplexity = Boolean.Parse(args[1]);
                 var generatorId = Int32.Parse(args[2]);
@@ -32,17 +27,30 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
             {
                 Console.WriteLine("Benchmark");
 
-                Benchmark(50, false);
-                Benchmark(100, false);
-                Benchmark(500, false);
-                Benchmark(1000, false);
-                Benchmark(5000, false);
+                Benchmark(1, false);
+                Benchmark(4, false);
+                Benchmark(16, false);
+                Benchmark(64, false);
+                Benchmark(128, false);
+                Benchmark(256, false);
+                Benchmark(512, false);
+                Benchmark(1024, false);
+                Benchmark(2048, false);
+                Benchmark(4096, false);
 
-                Benchmark(50, true);
-                Benchmark(100, true);
-                Benchmark(500, true);
-                Benchmark(1000, true);
-                Benchmark(5000, true);
+                Benchmark(1, true);
+                Benchmark(4, true);
+                Benchmark(16, true);
+                Benchmark(64, true);
+                Benchmark(128, true);
+                Benchmark(256, true);
+                Benchmark(512, true);
+                Benchmark(1024, true);
+                Benchmark(2048, true);
+                Benchmark(4096, true);
+
+                Benchmark(129, true);
+                Benchmark(129, false);
 
                 Console.ReadLine();
             }
