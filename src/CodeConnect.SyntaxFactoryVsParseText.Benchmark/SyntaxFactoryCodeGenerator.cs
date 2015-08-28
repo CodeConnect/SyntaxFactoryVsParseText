@@ -72,7 +72,7 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
                             SyntaxFactory.LineFeed)))
                 .WithMembers(
                     SyntaxFactory.List<MemberDeclarationSyntax>(
-                        GetAllMembers())) // <--
+                        getAllMembers())) // <--
                 .WithCloseBraceToken(
                     SyntaxFactory.Token(
                         SyntaxFactory.TriviaList(
@@ -82,10 +82,10 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
                         SyntaxFactory.TriviaList()));
         }
 
-        private IEnumerable<MemberDeclarationSyntax> GetAllMembers()
+        private IEnumerable<MemberDeclarationSyntax> getAllMembers()
         {
-            var runMethod = GetRunMethod();
-            var otherMethods = GetMethods();
+            var runMethod = getRunMethod();
+            var otherMethods = getMethods();
 
             var allMembers = new List<MemberDeclarationSyntax>();
             allMembers.Add(runMethod);
@@ -93,7 +93,7 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
             return allMembers;
         }
 
-        private MemberDeclarationSyntax GetRunMethod()
+        private MemberDeclarationSyntax getRunMethod()
         {
             return
                     SyntaxFactory.MethodDeclaration(
@@ -192,7 +192,7 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
             }
         }
 
-        private IEnumerable<MethodDeclarationSyntax> GetMethods()
+        private IEnumerable<MethodDeclarationSyntax> getMethods()
         {
             foreach (var methodName in _methodNames)
             {
