@@ -28,7 +28,7 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
             _sb.Append(@"    public class DemoClass : IDemo
     {
 ");
-            GetAllMembers();
+            getAllMembers();
             _sb.Append(@"    }");
 
             var parsedTree = CSharpSyntaxTree.ParseText(_sb.ToString());
@@ -37,13 +37,13 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
             return targetType;
         }
 
-        private void GetAllMembers()
+        private void getAllMembers()
         {
-            GetRunMethod();
-            GetMethods();
+            getRunMethod();
+            getMethods();
         }
 
-        private void GetRunMethod()
+        private void getRunMethod()
         {
             _sb.Append(@"        public void Run()
         {");
@@ -62,7 +62,7 @@ namespace CodeConnect.SyntaxFactoryVsParseText.Benchmark
             }
         }
 
-        private void GetMethods()
+        private void getMethods()
         {
             foreach (var methodName in _methodNames)
             {
